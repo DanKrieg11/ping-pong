@@ -5,7 +5,7 @@ from Player import Player
  
 def game(): 
     #Игровая сцена: 
-    back = (200, 255, 255) # цвет фона (background) 
+    back =(200, 222, 200) # цвет фона (background) 
     win_width = 600 
     win_height = 500 
     window = display.set_mode((win_width, win_height)) 
@@ -19,14 +19,14 @@ def game():
  
     racket1 = Player('rocketka.png', 30, 200,  50, 150, 4, win_width, win_height, window) # при созданни спрайта добавляется еще два параметра 
     racket2 = Player('rocketka.png', 520, 200,  50, 150, 4,  win_width, win_height, window) 
-    ball = GameSprite('myachik.png', 200, 200, 50, 50 , 4 , win_width , win_height , window)
+    ball = GameSprite('UK.png', 200, 200, 50, 50 , 4 , win_width , win_height , window)
     speed_x = 3
     speed_y = 3
     
     font.init()
     font1 = font.Font(None, 35)
-    lose1 = font1.render('Player 1 Lose!', True,(180,0,0))
-    lose2 = font1.render('Player 2 Lose!', True,(180,0,0))
+    lose1 = font1.render('PLAYER 1 is NOOB!', True,(180,0,0))
+    lose2 = font1.render('Player 2 is too BAD!', True,(180,0,0))
     
 
 
